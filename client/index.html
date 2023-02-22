@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <script src="index.js" defer></script>
+    <style>
+        #game-board {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="initialScreen"">
+            <h1>Snake</h1>
+            <button id="new-game-btn">Create New Board</button>
+            <div>
+                <input type="text" placeholder="Enter Game Code" id="game-code">
+            </div>
+            <button id="join-btn"">Join Game</button>
+        </div>
+    </section>
+    <section>
+        <div id="game-board">
+            <h1>Your game code is: <span id="game-code-display"></span></h1>
+            <canvas id="canvas"></canvas>
+        </div>
+    </section>
+
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+</body>
+</html>
